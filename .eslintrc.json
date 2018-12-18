@@ -1,0 +1,35 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "plugins": [
+        "html" 
+    ],
+    "rules": {
+        "indent": ["error",4],
+        "camelcase": "error",
+        "eqeqeq": "error",
+        "no-console": "off",
+        "no-alert": "error",
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false
+            }
+        }],
+        "no-const-assign": "error",
+        "new-cap": "error",
+        "brace-style": "error",
+        "comma-dangle": "error",
+        "no-param-reassign": "error"
+    }
+}

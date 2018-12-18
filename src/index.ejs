@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--<%= new Date().getFullYear()+'/'+(new Date().getMonth()+1)+'/'+new Date().getDate()+' '+new Date().getHours()+':'+new Date().getMinutes() %>-->
+<%
+var path = require('path');
+var mainJs=path.relative("./",String(htmlWebpackPlugin.files.js[0]));
+var vendorsJs=path.relative("./",String(htmlWebpackPlugin.files.js[1]));
+var favicon=path.relative("./",String(htmlWebpackPlugin.files.favicon));
+var mainCss=path.relative("./",String(htmlWebpackPlugin.files.css[0]));
+%>
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% if(path.normalize(favicon)){ %>
+    <link rel="shortcut icon" href="/<%= path.normalize(favicon) %>" />
+    <% } %>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="/<%= path.normalize(mainCss) %>">
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript" src="/<%= path.normalize(mainJs) %>"></script>
+    <script type="text/javascript" src="/<%= path.normalize(vendorsJs) %>"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@import url( './theme/theme.less');
+@import './animate.css';
+@import './font-awesome.min.css';
+
+//http://www.bootcss.com/p/font-awesome/#icons-new
+*{box-sizing:border-box;outline:none; transition:background-color ease 200ms}
+html,body{color:#444;font-size:14px!important;font-family: "Microsoft YaHei","Apple LiGothic Medium","NSimSun","FontAwesome","Arial" !important;}
+input,textarea,button{ outline:none;font-size:14px;font-family: "Microsoft YaHei","Apple LiGothic Medium","NSimSun","FontAwesome","Arial" !important;}
+html{ position:relative; min-height: 100%;}
+body{ background: #f7f8f9; }
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend,li, ol, p, pre, small, span, strong, u, ul, var, button {margin:0; padding:0; list-style:none;}
+form, article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary ,ul ,li  {display: block;}
+/*选中文字颜色*/
+::selection{background:@themeColor;color:#FFF;}
+::-moz-selection{background:@themeColor;color:#FFF;}
+::-webkit-selection{background:@themeColor;color:#FFF;}
+::-ms-selection{background:@themeColor;color:#FFF;}
+::-o-selection{background:@themeColor;color:#FFF;}
+table{table-layout: fixed; word-break: break-all; word-wrap:break-word;}
+.hide {display: none;}
+.clearfix{zoom:1; clear: both;}
+.clearfix:after {clear: both;content: " ";display: block;height: 0;overflow: hidden;line-height: 0;font-size: 0;}
+.fl{float:left;}
+.fr{float:right;}
+/*滚动条样式*/
+div::-webkit-scrollbar-track{border-radius: 0px;background-color: rgba(0,0,0,0.05);}
+div::-webkit-scrollbar{width: 10px; height: 10px ;background-color:rgba(0,0,0,0.05);}
+div::-webkit-scrollbar-thumb{border-radius: 0px;background-color: rgba(0,0,0,0.09);}
+table tr th{white-space: nowrap;}
+
+//主题内容设置宽度
+.webBody{
+    width: 1100px;
+    margin: 0px auto;
+    position: relative;
+}
+.mainBody{
+    width: 100%;
+    position: relative;
+}
+
+
